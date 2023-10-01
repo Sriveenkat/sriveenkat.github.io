@@ -45,7 +45,12 @@ font-family: 'Pavanam', sans-serif;
     text-decoration: none;
     font-size: 17px;
 }
-  
+.navbar a.translate{
+float: right;
+background-color: #fd0a54;
+padding: 14px 16px;
+font-size: 16px;    
+}
   /* Change the color of links on hover */
   .navbar a:hover {
     background-color: #f5ecb7;
@@ -63,7 +68,8 @@ font-size: 30pt;
     margin-left: 5vh;
 }
 h5{
-    margin-left: 5vh;
+    font-size: 12pt;
+        margin-left: 5vh;
     color:grey
 }
 h4{
@@ -75,6 +81,11 @@ h4{
   box-sizing: border-box;
 }
 
+.para p{
+margin-left: 5vh;
+padding: 0 20px;
+    font-size: 15pt
+}
 
 /* Float four columns side by side */
 .column {
