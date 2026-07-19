@@ -1,102 +1,23 @@
-
-body{
-    font-family: 'Poppins', sans-serif;
-    background-color: #efd9b4
-        
-}
-:lang(ta) 	{
-font-family: 'Pavanam', sans-serif;
-}
-
-.button {
-  background-color: #fd0a54;
-  border: none;
-  color: white;
-  padding: 9px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-}
-.button1 {border-radius: 12px;float: right}
-.button:hover {background-color: #f57576}
-
-.button:active {
-  background-color: #fd0a54;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-/* Add a black background color to the top navigation */
-.navbar {
-    background-color: #23192d;
-    overflow: hidden;
-      border-radius: 25px;
-
-  }
+/* 
+  Tailwind CSS is now used for styling.
+  This site uses Tailwind CSS CDN for modern, responsive design.
   
-  /* Style the links inside the navigation bar */
-  .navbar a {
-    float: left ;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-.navbar a.translate{
-float: right;
-background-color: #fd0a54;
-padding: 14px 16px;
-font-size: 16px;    
-}
-  /* Change the color of links on hover */
-  .navbar a:hover {
-    background-color: #f5ecb7;
-    color: black;
-  }
+  Tailwind CSS documentation: https://tailwindcss.com/docs
   
-  /* Add a color to the active/current link */
-  .navbar a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
+  Font families:
+  - 'Poppins' for English content
+  - 'Pavanam' for Tamil content
+*/
 
-.title{
-font-size: 30pt;
-    margin-left: 5vh;
-}
-h5{
-    font-size: 12pt;
-        margin-left: 5vh;
-    color:grey
-}
-h4{
-    margin-left: 5vh;
+/* Optional: Add any custom utility classes or animations here if needed */
+
+@layer components {
+  /* Add custom component styles if needed */
 }
 
-/*Columns*/
-* {
-  box-sizing: border-box;
+@layer utilities {
+  /* Add custom utilities if needed */
 }
-
-.para p{
-margin-left: 5vh;
-padding: 0 20px;
-    font-size: 15pt
-}
-
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 50%;
-  padding: 0 10px;
-    color:black
-}
-
-/* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
 
 /* Clear floats after the columns */
 .row:after {

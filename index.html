@@ -4,47 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sriveenkat Notebook</title>
-    <link rel="stylesheet" href="styles.css">
-    
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
 </head>
-<body>
-    
-    <h1>Sriveenkat's Notes</h1>
-    
-    <!-- Navbar-->
-    <div class="navbar">
-        <a class="active" href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects & Plans</a>
-        <a href="#notes">Notebook</a>    
-        <a href="taindex.html" class="translate">தமிழில் காண்க</a>
-    </div>
-    
-    <div class="title"><b>My Blogs</b></div>
-            <h4>More Tutorial Blogs comes in the future</h4>
-    <!--column1 -->
-<div class="row">
-     <div class="column">
-    <div class="card"><h2>Add Audio Pronunciation from Lingua Libre (Simple Way)</h2>
-    <h5>A Simple Way for Add Audio Pronunciations for Non-Lingua Libre Bot Wiktionaries</h5>
-    <p>Go to Lingua Libre's Sound library, Type or Select the Language you needed and Search. Next Click on Export this query in csv. (Note: CSV query file shows only 102 Recorded words). This is not recommended by me (User:Sriveenkat).....</p>
-                 <a href="https://sriveenkats-organization.gitbook.io/lingua-libre/" target="_blank"><button class="button button1">See on Gitbook</button></a>
-         </div>
-         
-  </div>
-    
-    <!--column2 
-  <div class="column">
-    <div class="card">..</div>
-  </div>
-    </div>-->
-    
-    
+<body class="bg-gradient-to-br from-slate-50 to-slate-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#home" class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">Sriveenkat</a>
+                <div class="flex gap-1">
+                    <a href="#home" class="px-4 py-2 rounded-lg hover:bg-purple-100 text-purple-600 font-semibold transition">Home</a>
+                    <a href="#about" class="px-4 py-2 rounded-lg hover:bg-purple-100 text-gray-700 transition">About</a>
+                    <a href="#projects" class="px-4 py-2 rounded-lg hover:bg-purple-100 text-gray-700 transition">Projects</a>
+                    <a href="#notes" class="px-4 py-2 rounded-lg hover:bg-purple-100 text-gray-700 transition">Notebook</a>
+                    <a href="taindex.html" class="ml-2 px-4 py-2 rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold hover:shadow-lg transition">தமிழ்</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="max-w-6xl mx-auto px-4 py-16 text-center">
+        <h1 class="text-5xl font-bold text-gray-800 mb-4">Sriveenkat's Notes</h1>
+        <p class="text-xl text-gray-600 mb-8">Explore my blogs, tutorials, and insights on open-source software and Wikimedia projects</p>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">My Blogs</h2>
+        <p class="text-lg text-gray-600 mb-12">More tutorial blogs coming in the future</p>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden">
+                <div class="bg-gradient-to-r from-purple-500 to-pink-500 h-2"></div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Add Audio Pronunciation from Lingua Libre (Simple Way)</h3>
+                    <p class="text-sm font-semibold text-purple-600 mb-3">Tutorial • Open Source</p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">A simple way to add audio pronunciations for non-Lingua Libre bot Wiktionaries. Export audio files directly from Lingua Libre's sound library using CSV queries.</p>
+                    <a href="https://sriveenkats-organization.gitbook.io/lingua-libre/" target="_blank" class="inline-block px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:shadow-lg transition duration-200">Read on Gitbook →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-20 py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">About</h3>
+                    <p class="text-gray-400">Sharing knowledge about open-source tools and Wikimedia projects in Tamil and English.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="text-gray-400 space-y-2">
+                        <li><a href="#home" class="hover:text-white transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition">About</a></li>
+                        <li><a href="taindex.html" class="hover:text-white transition">Tamil</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">License</h3>
+                    <p class="text-gray-400 text-sm">Content licensed under CC-BY-SA 4.0</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p class="mb-2">All text content © Sriveenkat</p>
+                <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license noopener noreferrer" class="text-purple-400 hover:text-purple-300 transition">Attribution-ShareAlike 4.0 International</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
